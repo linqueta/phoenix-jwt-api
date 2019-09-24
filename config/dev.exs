@@ -2,8 +2,8 @@ use Mix.Config
 
 # Configure your database
 config :my_api, MyApi.Repo,
-  username: "postgres",
-  password: "postgres",
+  username: "linqueta",
+  password: "linqueta",
   database: "my_api_dev",
   hostname: "localhost",
   show_sensitive_data_on_connection_error: true,
