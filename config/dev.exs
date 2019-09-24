@@ -4,7 +4,7 @@ use Mix.Config
 config :my_api, MyApi.Repo,
   username: "linqueta",
   password: "linqueta",
-  database: "my_api_elixir__dev",
+  database: "my_jwt_api_dev",
   hostname: "localhost",
   show_sensitive_data_on_connection_error: true,
   pool_size: 10
