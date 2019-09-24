@@ -20,6 +20,12 @@ defmodule MyApiWeb.Router do
     resources "/users", UserController, except: [:new, :edit]
   end
 
+  scope "/api/v1", MyApiWeb do
+    pipe_through :api
+
+    resources "/users", UserController, only: [:create, :show]
+  end
+
   # Other scopes may use custom stacks.
   # scope "/api", MyApiWeb do
   #   pipe_through :api
